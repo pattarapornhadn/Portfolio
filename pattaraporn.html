@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattaraporn Portfolio</title>
+    <link rel="stylesheet" href="pa.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">HOME</a>
+                <a href="#projects" class="nav-link">PROJECTS</a>
+                <a href="#experience" class="nav-link">EXPERIENCE</a>
+                <a href="#certificate" class="nav-link">CERTIFICATE</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="hero-section" id="home">
+        <img src="lmage/lmage 1.png" alt="Portfolio Background" class="background-image">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">WELCOME</span>
+                <span class="title-line">TO MY</span>
+                <span class="title-line">PORTFOLIO</span>
+            </h1>
+            <button class="explore-btn" onclick="explorePortfolio()">Explore</button>
+        </div>
+    </div>
+    
+
+
+    <div class="content-section" id="portfolio">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content" style="text-align: center; color: #043927;">
+                <p>My name is Pattaraporn Hadnontun.</p>
+                <p>I have interest and passion in the fields of Graphic Design and UX/UI Design, because I believe that design is not just about aesthetics, but it is communication that can create a good experience for users. I want to learn new experiences to work with talented people in a real workplace. Nice to meet everyone who visits this website. Here, you will get to know who I am and what I can do.</p>
+            </div>
+            
+            <!-- Gallery Section -->
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide active">
+                        <img src="lmage/lmage 2.jpg" alt="Image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="lmage/lmage 3.jpg" alt="Image 3">
+                    </div>
+                    <div class="slide">
+                        <img src="lmage/lmage 4.jpg" alt="Image 4">
+                    </div>
+                    <div class="slide">
+                        <img src="lmage/lmage 5.jpg" alt="Image 5">
+                    </div>
+                    <div class="slide">
+                        <img src="lmage/lmage 6.jpg" alt="Image 6">
+                    </div>
+                    <div class="slide">
+                        <img src="lmage/lmage 7.jpg" alt="Image 7">
+                    </div>
+                </div>
+                
+                <!-- Navigation buttons -->
+                <button class="nav-btn prev-btn" onclick="changeSlide(-1)">❮</button>
+                <button class="nav-btn next-btn" onclick="changeSlide(1)">❯</button>
+                
+                <!-- Dots indicator -->
+                <div class="dots-container">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+            
+            <!-- Profile Section -->
+     <section id="profile" class="section profile-section">
+         <div class="container">
+             <div class="profile-content">
+                 <div class="profile-layout">
+                     <div class="profile-text">
+                         <h1 class="profile-hello">HELLO</h1>
+                         
+                         <div class="profile-info">
+                             <p><strong>NAME :</strong> Pattaraporn Hadnontun</p>
+                             <p><strong>NICKNAME :</strong> NOEY</p>
+                             <p><strong>AGE :</strong> 22</p>
+                             <p><strong>BIRTHDAY :</strong> 28 August 2003</p>
+                             <p><strong>GENDER :</strong> Female</p>
+                             <p><strong>NATIONALITY :</strong> Thai</p>
+                             
+                             <div class="occupation-section">
+                                 <p><strong>INTERESTED OCCUPATION</strong></p>
+                                 <p class="occupation-detail">: User Experience / User Interface ,</p>
+                                 <p class="occupation-detail">Software tester</p>
+                             </div>
+                         </div>
+                     </div>
+                     
+                     <div class="profile-image">
+                         <img src="lmage/Auttaphon-6.jpg" alt="Pattaraporn Profile" class="profile-photo">
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="skills-content">
+            <h2 class="skills-title">Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Languages</h3>
+                    <ul class="skill-list">
+                        <li>Thai (native)</li>
+                        <li>English (basic)</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">Technical Skills</h3>
+                    <ul class="skill-list">
+                        <li>SQL</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">Data Visualizations</h3>
+                    <ul class="skill-list">
+                        <li>Microsoft Excel</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">Productivity Tools</h3>
+                    <ul class="skill-list">
+                        <li>Microsoft Office</li>
+                        <li>Canva</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">UX/UI & Design Tools</h3>
+                    <ul class="skill-list">
+                        <li>Figma</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Draw.io</li>
+                        <li>Adobe Premiere Pro</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <h2>PROJECTS</h2>
+            <div class="projects-content">
+                <!-- Exotic Shop Project -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="lmage/Exotic Shop/LINE_ALBUM_Portfolio Noey Img_250914_1.jpg" alt="Exotic Shop Project" class="project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>Exotic Shop</h3>
+                        <p>Exotic Shop is a pet food shopping website that we designed specifically for animal lovers, especially those who care for exotic pets. I was responsible for designing the system and user interface of this website.</p>
+                    </div>
+                </div>
+
+                <!-- Automatic Pet Feeder Project -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="lmage/Automatic pet feeder/LINE_ALBUM_Portfolio Noey Img_250914_10.jpg" alt="Automatic Pet Feeder Project" class="project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>Automatic pet feeder</h3>
+                        <p>Invented an automatic pet feeder using Arduino technology, allowing users to set specific feeding times through a programmable timer system.</p>
+                    </div>
+                </div>
+
+                <!-- PLAYPIXXIE Project -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="lmage/PLAYPIXXIE/LINE_ALBUM_Portfolio Noey Img_250914_4.jpg" alt="PLAYPIXXIE Project" class="project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>PLAYPIXXIE</h3>
+                        <h4>ART TOY SHOP</h4>
+                        <p>Responsible for UX/UI design of a mobile application for ordering art toys, focusing on user-friendly interface and seamless shopping experience</p>
+                    </div>
+                </div>
+
+                <!-- Food 4 Life Project -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="lmage/LINE_ALBUM_Portfolio Noey Img_250914_16.jpg" alt="Food 4 Life Project" class="project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>Food 4 Life</h3>
+                        <p>UX/UI design for a diabetes-friendly meal recommendation app, focusing on health-oriented and user-centric experience.</p>
+                    </div>
+                </div>
+
+                <!-- Xpense Project -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="lmage/LINE_ALBUM_Portfolio Noey Img_250914_20.jpg" alt="Xpense Project" class="project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>Xpense</h3>
+                        <p>Designed the UX/UI of a personal finance app focused on savings and expense management.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <h3>Creative Projects</h3>
+                    <p>Explore my creative endeavors and artistic expressions.</p>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Professional Work</h3>
+                    <p>Discover my professional achievements and collaborations.</p>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Personal Journey</h3>
+                    <p>Learn about my experiences and growth over time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pattaraporn Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="patt.js"></script>
+</body>
+</html>
