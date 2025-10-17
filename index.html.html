@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7efe9">
+    <title>Pattaraporn Portfolio</title>
+    <!-- Fonts for natural & feminine feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pa.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="nav-toggle" aria-label="Toggle navigation" type="button">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">HOME</a>
+                <a href="#projects" class="nav-link">PROJECTS</a>
+                <a href="#experience" class="nav-link">EXPERIENCE</a>
+                
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <div class="hero-section" id="home">
+        <img src="lmage/lmage 1.png" alt="Portfolio Background" class="background-image">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">WELCOME</span>
+                <span class="title-line">TO MY</span>
+                <span class="title-line">PORTFOLIO</span>
+            </h1>
+            <button class="explore-btn" onclick="explorePortfolio()">Explore</button>
+        </div>
+    </div>
+    
+
+
+    <div class="content-section" id="portfolio">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content" style="text-align: center; color: #043927;">
+                <p>My name is Pattaraporn Hadnontun.</p>
+                <p>I have interest and passion in the fields of Graphic Design and UX/UI Design, because I believe that design is not just about aesthetics, but it is communication that can create a good experience for users. I want to learn new experiences to work with talented people in a real workplace. Nice to meet everyone who visits this website. Here, you will get to know who I am and what I can do.</p>
+            </div>
+            
+            <!-- Gallery Section -->
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide active">
+                        <img src="lmage/lmage 2.jpg" alt="Image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="lmage/lmage 3.jpg" alt="Image 3">
+                    </div>
+                    <div class="slide">
+                        <img src="lmage/lmage 4.jpg" alt="Image 4">
+                    </div>
+                    <div class="slide">
+                        <img src="lmage/lmage 5.jpg" alt="Image 5">
+                    </div>
+                    <div class="slide">
+                        <img src="lmage/lmage 6.jpg" alt="Image 6">
+                    </div>
+                    <div class="slide">
+                        <img src="lmage/lmage 7.jpg" alt="Image 7">
+                    </div>
+                </div>
+                
+                <!-- Navigation buttons -->
+                <button class="nav-btn prev-btn" type="button" onclick="changeSlide(-1)">❮</button>
+                <button class="nav-btn next-btn" type="button" onclick="changeSlide(1)">❯</button>
+                
+                <!-- Dots indicator -->
+                <div class="dots-container">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+            
+            <!-- Profile Section -->
+     <section id="profile" class="section profile-section">
+         <div class="container">
+             <div class="profile-content">
+                 <div class="profile-layout">
+                     <div class="profile-text">
+                         <h1 class="profile-hello">HELLO</h1>
+                         
+                         <div class="profile-info">
+                             <p><strong>NAME :</strong> Pattaraporn Hadnontun</p>
+                             <p><strong>NICKNAME :</strong> NOEY</p>
+                             <p><strong>AGE :</strong> 22</p>
+                             <p><strong>BIRTHDAY :</strong> 28 August 2003</p>
+                             <p><strong>GENDER :</strong> Female</p>
+                             <p><strong>NATIONALITY :</strong> Thai</p>
+                             
+                             <div class="occupation-section">
+                                 <p><strong>INTERESTED OCCUPATION</strong></p>
+                                 <p class="occupation-detail">: User Experience / User Interface ,</p>
+                                 <p class="occupation-detail">Software tester</p>
+                             </div>
+                         </div>
+                     </div>
+                     
+                     <div class="profile-image">
+                         <img src="lmage/Auttaphon-6.jpg" alt="Pattaraporn Profile" class="profile-photo">
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="skills-content">
+            <h2 class="skills-title">Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Languages</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-name">Thai</span> <span class="skill-level" data-level="native">Native</span></li>
+                        <li><span class="skill-name">English</span> <span class="skill-level" data-level="basic">Basic</span></li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">Technical Skills</h3>
+                    <ul class="skill-list">
+                        <li data-percent="30">
+                          <div class="level-row"><span class="skill-text">SQL</span><span class="level-label">Basic</span></div>
+                          <div class="bar-track"><div class="bar-fill"></div></div>
+                        </li>
+                        <li data-percent="70">
+                          <div class="level-row"><span class="skill-text">Python</span><span class="level-label">Proficient</span></div>
+                          <div class="bar-track"><div class="bar-fill"></div></div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">Data Visualizations</h3>
+                    <ul class="skill-list">
+                        <li data-percent="80">
+                          <div class="level-row"><span class="skill-text">Microsoft Excel</span><span class="level-label">Advanced</span></div>
+                          <div class="bar-track"><div class="bar-fill"></div></div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">Productivity Tools</h3>
+                    <ul class="skill-list">
+                        <li data-percent="80">
+                          <div class="level-row"><span class="skill-text">Microsoft Office</span><span class="level-label">Advanced</span></div>
+                          <div class="bar-track"><div class="bar-fill"></div></div>
+                        </li>
+                        <li data-percent="80">
+                          <div class="level-row"><span class="skill-text">Canva</span><span class="level-label">Advanced</span></div>
+                          <div class="bar-track"><div class="bar-fill"></div></div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">UX/UI & Design Tools</h3>
+                    <ul class="skill-list">
+                        <li data-percent="90">
+                          <div class="level-row"><span class="skill-text">Figma</span><span class="level-label">Expert</span></div>
+                          <div class="bar-track"><div class="bar-fill"></div></div>
+                        </li>
+                        <li data-percent="80">
+                          <div class="level-row"><span class="skill-text">Adobe Photoshop</span><span class="level-label">Advanced</span></div>
+                          <div class="bar-track"><div class="bar-fill"></div></div>
+                        </li>
+                        <li data-percent="50">
+                          <div class="level-row"><span class="skill-text">Draw.io</span><span class="level-label">Intermediate</span></div>
+                          <div class="bar-track"><div class="bar-fill"></div></div>
+                        </li>
+                        <li data-percent="70">
+                          <div class="level-row"><span class="skill-text">Adobe Premiere Pro</span><span class="level-label">Proficient</span></div>
+                          <div class="bar-track"><div class="bar-fill"></div></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Inline skill meters embedded into skill list items; removed separate skill-bars component -->
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section" id="experience">
+        <div class="container">
+            <h2>EXPERIENCE</h2>
+            <div class="experience-list">
+                <article class="experience-item">
+                    <div class="exp-number">01</div>
+                    <h3 class="exp-heading">SCB CARD X SUPPORT</h3>
+                    <p class="exp-details">Worked in the SCB Card X support team at SCB, handling tasks such as drafting customer correspondence, updating customer records, and entering current data into the system based on their status.</p>
+                    <div class="project-image-container" data-images="lmage/SCB/SCB1.jpg,lmage/SCB/SCB2.jpg,lmage/SCB/SCB3.jpg">
+                        <img src="lmage/SCB/SCB1.jpg" alt="SCB CARD X SUPPORT" class="project-image">
+                        <button class="image-nav prev" aria-label="Previous image" type="button">‹</button>
+                        <button class="image-nav next" aria-label="Next image" type="button">›</button>
+                        <div class="image-counter">1/3</div>
+                    </div>
+                </article>
+    
+                <article class="experience-item">
+                    <div class="exp-number">02</div>
+                    <h3 class="exp-heading">VOLUNTEER CLOUD TREE</h3>
+                    <p class="exp-details">Participated in a community volunteer activity focused on environmental cleanup and sustainability. Collected waste to help maintain a clean community and learned how to produce organic fertilizer using earthworms (vermicomposting). This initiative promoted eco-friendly practices, recycling awareness, and sustainable agriculture.</p>
+                    <div class="project-image-container" data-images="lmage/Volunteer/Vol1.jpg">
+                        <img src="lmage/Volunteer/Vol1.jpg" alt="Volunteer CLOUD TREE" class="project-image">
+                        <button class="image-nav prev" aria-label="Previous image" type="button">‹</button>
+                        <button class="image-nav next" aria-label="Next image" type="button">›</button>
+                        <div class="image-counter">1/1</div>
+                    </div>
+                </article>
+    
+                <article class="experience-item">
+                    <div class="exp-number">03</div>
+                    <h3 class="exp-heading">Freshmen Orientation Event, Faculty of Information Technology and Innovation</h3>
+                    <p class="exp-details">Served as a staff member and cheerleader during the freshmen orientation event at the Faculty of Information Technology and Innovation, including performing in stage shows and helping organize activities.</p>
+                    <div class="project-image-container" data-images="lmage/Freshmen/Freshmen1.jpg">
+                        <img src="lmage/Freshmen/Freshmen1.jpg" alt="Freshmen Orientation Event" class="project-image">
+                        <button class="image-nav prev" aria-label="Previous image" type="button">‹</button>
+                        <button class="image-nav next" aria-label="Next image" type="button">›</button>
+                        <div class="image-counter">1/1</div>
+                    </div>
+                </article>
+    
+                <article class="experience-item">
+                    <div class="exp-number">04</div>
+                    <h3 class="exp-heading">Performed a K‑pop dance cover to support the Faculty of Humanities</h3>
+                    <p class="exp-details">Performed a K‑pop dance cover to support the Faculty of Humanities during a university event, contributing to event engagement and entertainment.</p>
+                    <div class="project-image-container" data-images="lmage/K-pop/Kpop1.jpg,lmage/K-pop/Kpop2.jpg,lmage/K-pop/Kpop3.jpg">
+                        <img src="lmage/K-pop/Kpop1.jpg" alt="K-pop Dance Cover" class="project-image">
+                        <button class="image-nav prev" aria-label="Previous image" type="button">‹</button>
+                        <button class="image-nav next" aria-label="Next image" type="button">›</button>
+                        <div class="image-counter">1/3</div>
+                    </div>
+                </article>
+    
+                <article class="experience-item">
+                    <div class="exp-number">05</div>
+                    <h3 class="exp-heading">Worked at the university’s Common Lounge as a staff</h3>
+                    <p class="exp-details">Worked at the university’s Common Lounge as a staff member responsible for managing meeting room reservations and assisting students with facility bookings.</p>
+                    <div class="project-image-container" data-images="lmage/Common/Common1.jpg">
+                        <img src="lmage/Common/Common1.jpg" alt="Common Lounge Staff" class="project-image">
+                        <button class="image-nav prev" aria-label="Previous image" type="button">‹</button>
+                        <button class="image-nav next" aria-label="Next image" type="button">›</button>
+                        <div class="image-counter">1/1</div>
+                    </div>
+                </article>
+    
+                <article class="experience-item">
+                    <div class="exp-number">06</div>
+                    <h3 class="exp-heading">Cheerleader for the Faculty of ITI</h3>
+                    <p class="exp-details">Served as a cheerleader for the Faculty of Information Technology and Innovation (ITI) from first to third year, actively participating in performances and supporting university events.</p>
+                    <div class="project-image-container portrait-9-16" data-images="lmage/Cheer/Cheer1.jpg,lmage/Cheer/Cheer2.jpg,lmage/Cheer/Cheer3.jpg,lmage/Cheer/Cheer4.jpg">
+                        <img src="lmage/Cheer/Cheer1.jpg" alt="Cheerleader for the Faculty of ITI" class="project-image">
+                        <button class="image-nav prev" aria-label="Previous image" type="button">‹</button>
+                        <button class="image-nav next" aria-label="Next image" type="button">›</button>
+                        <div class="image-counter">1/4</div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <h2>PROJECTS</h2>
+            <div class="projects-content">
+                <!-- Exotic Shop Project -->
+                <div class="project-card">
+                    <div class="project-image-container" data-images="lmage/Exotic Shop/Exo1.jpg,lmage/Exotic Shop/Exo2.jpg,lmage/Exotic Shop/Exo3.jpg">
+                        <img src="lmage/Exotic Shop/Exo1.jpg" alt="Exotic Shop Project" class="project-image">
+                        <button class="image-nav prev" aria-label="Previous image" type="button">‹</button>
+                        <button class="image-nav next" aria-label="Next image" type="button">›</button>
+                        <div class="image-counter">1/3</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Exotic Shop</h3>
+                        <p>Exotic Shop is a pet food shopping website that we designed specifically for animal lovers, especially those who care for exotic pets. I was responsible for designing the system and user interface of this website.</p>
+                    </div>
+                </div>
+
+                <!-- Automatic Pet Feeder Project -->
+                <div class="project-card">
+                    <div class="project-image-container" data-images="lmage/Automatic pet feeder/Ar1.jpg,lmage/Automatic pet feeder/Ar2.jpg,lmage/Automatic pet feeder/Ar3.jpg,lmage/Automatic pet feeder/Ar4.jpg,lmage/Automatic pet feeder/Ar5.jpg,lmage/Automatic pet feeder/Ar6.jpg">
+                        <img src="lmage/Automatic pet feeder/Ar1.jpg" alt="Automatic pet feeder Project" class="project-image">
+                        <button class="image-nav prev" aria-label="Previous image" type="button">‹</button>
+                        <button class="image-nav next" aria-label="Next image" type="button">›</button>
+                        <div class="image-counter">1/6</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Automatic pet feeder</h3>
+                        <p>Invented an automatic pet feeder using Arduino technology, allowing users to set specific feeding times through a programmable timer system.</p>
+                    </div>
+                </div>
+
+                <!-- PLAYPIXXIE Project -->
+                <div class="project-card">
+                    <div class="project-image-container portrait-9-16" data-images="lmage/PLAYPIXXIE/Pixxie1.jpg,lmage/PLAYPIXXIE/Pixxie2.jpg,lmage/PLAYPIXXIE/Pixxie3.jpg,lmage/PLAYPIXXIE/Pixxie4.jpg,lmage/PLAYPIXXIE/Pixxie5.jpg,lmage/PLAYPIXXIE/Pixxie6.jpg">
+                        <img src="lmage/PLAYPIXXIE/Pixxie1.jpg" alt="PLAYPIXXIE Project" class="project-image">
+                        <button class="image-nav prev" aria-label="Previous image" type="button">‹</button>
+                        <button class="image-nav next" aria-label="Next image" type="button">›</button>
+                        <div class="image-counter">1/6</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>PLAYPIXXIE</h3>
+                        <h4>ART TOY SHOP</h4>
+                        <p>Responsible for UX/UI design of a mobile application for ordering art toys, focusing on user-friendly interface and seamless shopping experience</p>
+                    </div>
+                </div>
+
+                <!-- Food 4 Life Project -->
+                <div class="project-card">
+                    <div class="project-image-container portrait-9-16" data-images="lmage/Food4/Food1.png,lmage/Food4/Food2.png,lmage/Food4/Food3.png">
+                        <img src="lmage/Food4/Food1.png" alt="Food 4 Life Project" class="project-image">
+                        <button class="image-nav prev" aria-label="Previous image" type="button">‹</button>
+                        <button class="image-nav next" aria-label="Next image" type="button">›</button>
+                        <div class="image-counter">1/3</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Food 4 Life</h3>
+                        <p>UX/UI design for a diabetes-friendly meal recommendation app, focusing on health-oriented and user-centric experience</p>
+                    </div>
+                </div>
+
+                <!-- Xpense Project -->
+                <div class="project-card">
+                    <div class="project-image-container portrait-9-16" data-images="lmage/Xpense/Xpense.png,lmage/Xpense/Xpense2.png,lmage/Xpense/Xpense3.png">
+                        <img src="lmage/Xpense/Xpense.png" alt="Xpense Project" class="project-image">
+                        <button class="image-nav prev" aria-label="Previous image" type="button">‹</button>
+                        <button class="image-nav next" aria-label="Next image" type="button">›</button>
+                        <div class="image-counter">1/3</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Xpense</h3>
+                        <p>Designed the UX/UI of a personal finance app focused on savings and expense management.</p>
+                    </div>
+                </div>
+
+                <!-- HOTEL 101 Project -->
+                <div class="project-card">
+                    <div class="project-image-container" data-images="lmage/Hotel/Hotel.png">
+                        <img src="lmage/Hotel/Hotel.png" alt="HOTEL 101 Project" class="project-image">
+                        <button class="image-nav prev" aria-label="Previous image" type="button">‹</button>
+                        <button class="image-nav next" aria-label="Next image" type="button">›</button>
+                        <div class="image-counter">1/1</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>HOTEL 101</h3>
+                        <p>Designed the UX/UI for a fully integrated hotel booking system, developed using Java in NetBeans to provide a seamless and efficient user experience.</p>
+                    </div>
+                </div>
+
+                <!-- RIDE 'N' Guide Project -->
++               <div class="project-card ride-ui">
+                    <div class="project-image-container portrait-9-16" data-images="lmage/RideNGuide/Ride1.png,lmage/RideNGuide/Ride2.png,lmage/RideNGuide/Ride3.png">
+                        <img src="lmage/RideNGuide/Ride1.png" alt="RIDE 'N' Guide Project" class="project-image">
+                        <button type="button" class="image-nav prev" aria-label="Previous image" data-direction="prev">‹</button>
+                        <button type="button" class="image-nav next" aria-label="Next image" data-direction="next">›</button>
+                        <div class="image-counter" aria-live="polite">1/3</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>RIDE 'N' Guide</h3>
+                        <p>I created the UX/UI design for a travel app that leverages AI to deliver personalized and intelligent destination suggestions through interactive conversations</p>
+                    </div>
++               </div>
+                </div>
+        </div>
+    </section>
+            
+
+        </div>
+    </div>
+    
+    <!-- Contact Section at bottom -->
+    <section class="contact-page" id="contact">
+        <div class="contact-container">
+            <h2 class="contact-title">Work Together</h2>
+
+            <div class="contact-top">
+
+                <div class="contact-item">
+                    <a class="email-link" href="mailto:pattaraporn.hadnontun@gmail.com" aria-label="Email Pattaraporn Hadnontun">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" class="icon"><path d="M4 5h16c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2zm0 2v.01L12 12l8-4.99V7H4zm16 12V9.24l-8 4.99-8-4.99V19h16z"/></svg>
+                        <span>pattaraporn.hadnontun@gmail.com</span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <div class="social-links" aria-label="social links">
+                        <a href="https://github.com/pattarapornhadn" class="icon github" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.41c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.81 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.39 1.24-3.23-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.39 11.39 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.92 1.24 3.23 0 4.61-2.8 5.63-5.47 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.83.58A12 12 0 0 0 12 .5Z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/pattaraporn-hadnontun-115832375/" class="icon linkedin" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zM8 8h3.8v2.05h.05c.53-1 1.84-2.05 3.79-2.05C20.7 8 23 10.42 23 14.43V23h-4v-7.3c0-1.74-.03-3.98-2.43-3.98-2.44 0-2.82 1.9-2.82 3.86V23h-4V8z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/mn_noey.93.03/" class="icon instagram" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3a5 5 0 1 0 .001 10.001A5 5 0 0 0 12 7zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/noey.noey.165" class="icon facebook" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.5v-2.9h2.5V9.7c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.3 0-1.7.8-1.7 1.6v2h2.9l-.5 2.9h-2.4v7A10 10 0 0 0 22 12"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" novalidate>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="firstName">First Name</label>
+                        <input id="firstName" name="firstName" type="text" />
+                    </div>
+                    <div class="form-field">
+                        <label for="lastName">Last Name</label>
+                        <input id="lastName" name="lastName" type="text" />
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email *</label>
+                        <input id="email" name="email" type="email" required />
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6"></textarea>
+                </div>
+                <button type="submit" class="send-btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pattaraporn Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="patt.js"></script>
+</body>
+</html>
